@@ -27,14 +27,13 @@ class String
   end
 
   def count_sentences
-    counter = 0
-    array = self.split
-    array.each do |element|
-      if sentence? || question? || exclamation?
-        counter += 1
-      end
+  array = self.split(/[.?!]/ )
+  array.each do |element|
+    if element == ""
+    array.delete(element)
     end
-    counter
   end
-  
+  array.length
+end
+
 end
