@@ -27,13 +27,13 @@ class String
   end
 
   def count_sentences
-  array = self.split(/[.?!]/ )
-  array.each do |element|
-    if element == ""
-    array.delete(element)
+    array = self.split(/[.?!]/ )
+    array.each do |element|
+      if element == ""
+        array.delete(element)
+      end
     end
+    array.length
   end
-  array.length
-end
 
 end
