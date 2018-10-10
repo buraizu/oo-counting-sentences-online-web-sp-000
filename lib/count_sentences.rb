@@ -33,7 +33,7 @@ class String
       if sentence? || question? || exclamation?
         counter += 1
       end
-      counter
     end
   end
+  counter
 end
