@@ -30,7 +30,7 @@ class String
     counter = 0
     array = self.split
     array.each do |element|
-      if sentence?(element) || question?(element) || exclamation?(element)
+      if sentence? || question? || exclamation?
         counter += 1
       end
       counter
